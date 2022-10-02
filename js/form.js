@@ -26,7 +26,7 @@ class EmployeePayrollData {
         if (nameRegex.test(name))
             this._name = name;
         else
-            throw "**** NAME is Incorrect ****";
+            throw "NAME is Incorrect";
     }
 
     get profileImage() {
@@ -72,7 +72,7 @@ class EmployeePayrollData {
         if (startDate < new Date() || startDate < future)
             this._startDate = startDate;
         else
-            throw "**** START DATE is Incorrect ****";
+            throw "START DATE is Incorrect";
     }
 
     get notes() {
