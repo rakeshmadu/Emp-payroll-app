@@ -1,5 +1,6 @@
 {
   "employee": [
+    
     {
       "name": "rakesh",
       "gender": "male",
@@ -7,11 +8,10 @@
         "HR"
       ],
       "salary": "30000",
-      "startDate": "1 Jan 2022",
+      "startDate": "1 Jan 2020",
       "notes": "",
-      "id": 1604589551457,
-      "profileUrl": "../assets/profile-images/Ellipse 1.png"
+      "id": 1604589731061,
+      "profileUrl": "../assets/profile-images/Ellipse -3.png"
     }
-    
   ]
 }
