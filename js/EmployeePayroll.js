@@ -85,23 +85,20 @@ class EmployeePayRollData{
 
     set startDate(startDate)
     {
-        let now = new Date();
-        if(startDate<=now)
+        let datee = new Date();
+        if(startDate<=datee)
         {
-            var diff = Math.abs(now.getTime() - startDate.getTime());
-            if(diff/(1000*60*60*24) > 30)
-            throw 'Start Date is beyond 30 Days';
         this._startDate = startDate;
         }
         else
-        throw 'Strat Date is a Future Date';
+        throw 'StratDate is incorrect';
     }
 
     toString()
     {
-        const format = {year:'numeric', month:'numeric', day:'numeric'};
+        const format = {year:'numeric', month:'long', day:'numeric'};
         const date = this.startDate === undefined ? "undefined" :
-                     this.startDate.toLocaleDateString("en-GB",format);
+                     this.startDate.toLocaleDateString("en-US",format);
         return "Id = "+this.id+", Name = "+this.name+", Gender = "+this.gender+", ProfilePic = "+this.profilePic+", Department = "+this.department+", Salary = "+this.salary+
                 ", StartDate = "+date+", Note = "+this.note;
     }
