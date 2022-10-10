@@ -1,0 +1,17 @@
+{
+  "EmployeePayrollDB": [
+    {
+      "id": 1,
+      "_name": "Rahul",
+      "_gender": "male",
+      "_department": [
+        "Engineering",
+        "Finance"
+      ],
+      "_salary": "500000",
+      "_startDate": "09 Oct 2022",
+      "_note": "All In One",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png"
+    }
+  ]
+}
